@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sequence.css">
+    <script src="Sequence.js" defer></script>
+</head>
+<body>
+
+    <div id="form">
+        <textarea id="editor" cols="48" rows="10" readonly>@Act call #Cp1
+#Cp2 call @Act
+@Act call #Cp1
+[Sub1
+#Cp2 call @Act
+@Act call #Cp1
+#Cp1 call #Cp3
+#Cp3 call #Cp2
+#Cp2 call @Act
+]
+@Act call #Cp1
+#Cp2 call @Act</textarea>
+        <div>
+            <button id="editar">Editar</button>
+            <button id="gerar">Gerar</button>
+        </div>
+    </div>
+    
+    <div id="field">
+    </div>
+</body>
+</html>
